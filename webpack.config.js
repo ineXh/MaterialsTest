@@ -1,6 +1,7 @@
 const autoprefixer = require('autoprefixer');
 var path = require('path');
 var BUILD_DIR = path.resolve(__dirname, 'dist');
+var APP_DIR = path.resolve(__dirname, 'app');
 
 
 // Appendix: Configuring a Sass Importer for Nested node_modules
@@ -32,7 +33,7 @@ function materialImporter(url, prev) {
 // //////// End Sass Importer Appendix //////////////
 
 module.exports = [{
-  entry: ['./app/app.scss', './app/index.js'],
+  entry: ['./app/app.scss', './app/index.jsx'],
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
@@ -71,7 +72,15 @@ module.exports = [{
           presets: ['es2015'],
           plugins: ['transform-object-assign']
         },
-      } // js rule
+      }, // js rule
+      {
+        test : /\.jsx?/,
+        include : APP_DIR,
+        loader : 'babel-loader',
+        query:{
+          presets:['react']
+        }
+      },
     ]
   },
 }];
