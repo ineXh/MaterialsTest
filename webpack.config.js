@@ -1,8 +1,11 @@
 const autoprefixer = require('autoprefixer');
+var path = require('path');
+var BUILD_DIR = path.resolve(__dirname, 'dist');
 
 module.exports = [{
   entry: ['./app.scss', './app.js'],
   output: {
+    path: BUILD_DIR,
     filename: 'bundle.js',
   },
   module: {
