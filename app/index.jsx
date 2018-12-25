@@ -1,5 +1,4 @@
 import {MDCRipple} from '@material/ripple/index';
-const ripple = new MDCRipple(document.querySelector('.foo-button'));
 
 console.log('hello world');
 console.log('with ripple');
@@ -11,7 +10,10 @@ import {render} from 'react-dom';
 class App extends React.Component {
   render () {
     return( <div>
-    	Hello World! 123
+    	<div>Hello World! 12345</div>
+    	<button className="foo-button mdc-button">
+	    	Button
+	  	</button>
     </div>
   )}
 }
@@ -21,3 +23,4 @@ window.renderApp = function(element) {
 }
 
 renderApp();
+const ripple = new MDCRipple(document.querySelector('.foo-button'));
