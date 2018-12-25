@@ -78,7 +78,7 @@ module.exports = [{
         include : APP_DIR,
         loader : 'babel-loader',
         query:{
-          presets:['react']
+          presets:['react', ["es2015", {"modules": false}]]
         }
       },
     ]

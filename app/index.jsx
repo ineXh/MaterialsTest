@@ -11,7 +11,7 @@ import {render} from 'react-dom';
 class App extends React.Component {
   render () {
     return( <div>
-    	Hello World!
+    	Hello World! 123
     </div>
   )}
 }
