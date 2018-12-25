@@ -32,7 +32,7 @@ function materialImporter(url, prev) {
 // //////// End Sass Importer Appendix //////////////
 
 module.exports = [{
-  entry: ['./app.scss', './app.js'],
+  entry: ['./app/app.scss', './app/index.js'],
   output: {
     path: BUILD_DIR,
     filename: 'bundle.js',
