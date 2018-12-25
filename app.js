@@ -3,3 +3,4 @@ const ripple = new MDCRipple(document.querySelector('.foo-button'));
 
 console.log('hello world');
 console.log('with ripple');
+console.log('new log');
