@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "@material/button": "^0.42.0",
+    "@material/ripple": "^0.42.0",
     "autoprefixer": "^9.4.3",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
