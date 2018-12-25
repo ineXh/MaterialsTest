@@ -1,10 +1,45 @@
-body {
-  color: blue;
-}
 
 @import "@material/button/mdc-button";
 
 .foo-button {
   @include mdc-button-ink-color(teal);
   @include mdc-states(teal);
+  font-size: 36px;
 }
+
+$mdc-theme-primary: #fcb8ab;
+$mdc-theme-secondary: #feeae6;
+$mdc-theme-on-primary: #442b2d;
+$mdc-theme-on-secondary: #442b2d;
+
+@import "@material/top-app-bar/mdc-top-app-bar";
+
+@import "@material/drawer/mdc-drawer";
+@import "@material/list/mdc-list";
+
+body {
+	color: blue;
+	font-size: 36px;
+  display: flex;
+  height: 100vh;
+}
+
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
+
+.main-content {
+  overflow: auto;
+  height: 100%;
+}
+
+.app-bar {
+  position: absolute;
+}
+
+// only apply this style if below top app bar
+//.mdc-top-app-bar {
+//  z-index: 7;
+//}
