@@ -27,6 +27,7 @@ body {
   display: flex;
   height: 100vh;
 }
+
 .mdc-drawer--dismissible {
     left: 0;
     right: auto;
@@ -37,23 +38,7 @@ body {
 .mdc-top-app-bar {
   z-index: 7;
 }
-
 .main-content {
   overflow: auto;
   height: 100%;
 }
-/*
-.mdc-drawer-app-content {
-  flex: auto;
-  overflow: auto;
-  position: relative;
-}
-
-
-
-
-//.app-bar {
-//  position: absolute;
-//}
-
-*/

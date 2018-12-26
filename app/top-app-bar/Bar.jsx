@@ -2,16 +2,15 @@ import React from 'react';
 
 import {MDCTopAppBar} from '@material/top-app-bar/index';
 
-
 class Bar extends React.Component {
   componentDidMount(){
-    // const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-    // const topAppBar = new MDCTopAppBar(topAppBarElement);
+    const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+    const topAppBar = new MDCTopAppBar(topAppBarElement);
   }
   render () {
     // <header class="mdc-top-app-bar mdc-top-app-bar--fixed" style="top: 0px; left: 0px">
     return(
-      <header className="mdc-top-app-bar app-bar mdc-top-app-bar--fixed" id="app-bar" style={{ top: '0px',
+      <header className="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar" style={{ top: '0px',
                                     left  : '0px'}}>
         <div className="mdc-top-app-bar__row">
           <section className="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
@@ -30,4 +29,4 @@ class Bar extends React.Component {
 }
 
 export default Bar;
-// style={{top: '0px'}}
+// export {Bar, topAppBar};
