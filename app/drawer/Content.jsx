@@ -1,6 +1,6 @@
 import React from 'react';
 import constants from './../constants.js';
-import Prices from './Contents/Prices.jsx';
+import Prices from './Contents/Prices/index.jsx';
 
 class Content extends React.Component {
 	render () {

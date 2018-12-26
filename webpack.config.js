@@ -67,6 +67,10 @@ module.exports = [{
         ]
       }, // scss rule
       {
+        test: /\.css$/,
+        use: [ 'style-loader', 'css-loader?url=false' ]
+      },
+      {
         test: /\.js$/,
         loader: 'babel-loader',
         query: {
