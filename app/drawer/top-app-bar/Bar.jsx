@@ -4,8 +4,8 @@ import {MDCTopAppBar} from '@material/top-app-bar/index';
 
 class Bar extends React.Component {
   componentDidMount(){
-    const topAppBarElement = document.querySelector('.mdc-top-app-bar');
-    const topAppBar = new MDCTopAppBar(topAppBarElement);
+    // const topAppBarElement = document.querySelector('.mdc-top-app-bar');
+    // const topAppBar = new MDCTopAppBar(topAppBarElement);
   }
   render () {
     // <header class="mdc-top-app-bar mdc-top-app-bar--fixed" style="top: 0px; left: 0px">
@@ -18,9 +18,8 @@ class Bar extends React.Component {
             <span className="mdc-top-app-bar__title">Title</span>
           </section>
           <section className="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Download" alt="Download">file_download</a>
-            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Print this page" alt="Print this page">print</a>
-            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Bookmark this page" alt="Bookmark this page">bookmark</a>
+            <a href="#" className="material-icons mdc-top-app-bar__action-item" aria-label="Search" alt="Search">search</a>
+
           </section>
         </div>
       </header>

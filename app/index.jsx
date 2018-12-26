@@ -1,14 +1,12 @@
-console.log('hello world');
+// console.log('hello world');
 
 import React from 'react';
 import {render} from 'react-dom';
 import Drawer from './drawer/Drawer.jsx';
-import Bar from './top-app-bar/Bar.jsx';
 
 class App extends React.Component {
   render () {
     return( <div>
-    	<Bar/>
     	<Drawer/>
     </div>
   )}
