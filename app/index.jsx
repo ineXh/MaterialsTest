@@ -22,7 +22,7 @@ window.renderApp = function(element) {
   render(<App/>, document.getElementById('app'));
 }
 
-renderApp();
+// renderApp();
 // import {MDCRipple} from '@material/ripple/index';
 // const ripple = new MDCRipple(document.querySelector('.foo-button'));
 
@@ -41,3 +41,10 @@ renderApp();
 // import {MDCList} from "@material/list";
 // const list = MDCList.attachTo(document.querySelector('.mdc-list'));
 // list.wrapFocus = true;
+
+// import {MDCRipple} from '@material/ripple';
+
+// const selector = '.mdc-button, .mdc-icon-button, .mdc-card__primary-action';
+// const ripples = [].map.call(document.querySelectorAll(selector), function(el) {
+//   return new MDCRipple(el);
+// });
