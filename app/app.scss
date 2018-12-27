@@ -39,12 +39,12 @@ body {
 }
 // only apply this style if below top app bar
 .mdc-top-app-bar {
-  z-index: 7;
+  z-index: 10;
 }
 // Drawer with Content
 .mdc-top-app-bar--fixed-adjust{
-  padding-top: 0px;
-  z-index: 12;
+  //padding-top: 0px;
+  //z-index: 12;
 }
 // Left Drawer
 .mdc-drawer--dismissible.mdc-drawer--open {
