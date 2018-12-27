@@ -2,6 +2,7 @@ import React from 'react';
 import constants from './../constants.js';
 import Prices from './Contents/Prices/index.jsx';
 import Alerts from './Contents/Alerts/index.jsx';
+import Settings from './Contents/Settings/index.jsx';
 
 class Content extends React.Component {
 	render () {
@@ -19,6 +20,8 @@ class Content extends React.Component {
     			return <Prices/>
     		case constants.ListType.Alerts:
     			return <Alerts/>
+    		case constants.ListType.Settings:
+    			return <Settings/>
     	}
     }
 } // end Content

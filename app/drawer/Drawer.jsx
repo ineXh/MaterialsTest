@@ -10,7 +10,8 @@ import {MDCTopAppBar} from '@material/top-app-bar/index';
 class Drawer extends React.Component {
   constructor(props) {    super(props);
     this.state = {
-      list: constants.ListType.Prices,
+      list: constants.ListType.Settings,
+      headerTitle: "Title23"
     }
   }
   componentDidMount(){
@@ -30,14 +31,15 @@ class Drawer extends React.Component {
   render () {
     return(
       <div>
-        <Bar/>
+        <Bar
+          title={this.props.headerTitle}/>
         <div className="drawer-frame-root">
           <aside className="mdc-drawer mdc-drawer--dismissible mdc-top-app-bar--fixed-adjust">
             <div className="mdc-drawer__header"><h3 className="mdc-drawer__title">Mail</h3>
               <h6 className="mdc-drawer__subtitle">email@email.com</h6></div>
             <div className="mdc-drawer__content">
               <div className="mdc-list">
-                <a className="mdc-list-item mdc-list-item--activated" href="#" aria-selected="true"
+                <a className="mdc-list-item" href="#" aria-hidden="true"
                   onClick={this.handleClick.bind(this, constants.ListType.Prices)}>
                   <i className="material-icons mdc-list-item__graphic" aria-hidden="true">show_chart</i>
                   <span className="mdc-list-item__text">Prices</span>
@@ -52,9 +54,9 @@ class Drawer extends React.Component {
                   <i className="material-icons mdc-list-item__graphic" aria-hidden="true">account_box</i>
                   <span className="mdc-list-item__text">Account</span>
                 </a>
-                <a className="mdc-list-item" href="#"
+                <a className="mdc-list-item mdc-list-item--activated" href="#"
                   onClick={this.handleClick.bind(this, constants.ListType.Settings)}>
-                  <i className="material-icons mdc-list-item__graphic" aria-hidden="true">settings</i>
+                  <i className="material-icons mdc-list-item__graphic" aria-selected="true">settings</i>
                   <span className="mdc-list-item__text">Settings</span>
                 </a>
               </div>

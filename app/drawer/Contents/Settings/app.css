@@ -1,0 +1,20 @@
+.SettingsContainer{
+  font-size: 36px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#SettingsBar{
+	/*background-color: #8C45F2;*/
+    background-color: var(--mdc-theme-primary, #8C45F2);
+    color: white;
+    width: 100%;
+    min-height: 256px;
+    display: flex;
+    flex-direction: column;
+}
+
+#SettingsName{
+	margin: auto 0px;
+}

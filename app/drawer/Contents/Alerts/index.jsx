@@ -1,6 +1,5 @@
 import constants from './../../../constants.js';
 
-// start from tutorial: https://github.com/bmorelli25/interactive-bitcoin-price-chart
 import React, { Component } from 'react';
 
 class App extends Component {
