@@ -19,7 +19,22 @@ class App extends Component {
     return (
 
       <div className='PriceContainer'>
-        <BitcoinPrices/>
+        <div className='cardsContainer'>
+          <div className="mdc-card my-card">
+            <div className="mdc-card__primary-action mdc-ripple-upgraded" tabIndex="0">
+              <BitcoinPrices/>
+            </div>
+          </div>
+
+
+          <div className="mdc-card my-card">
+            <div className="mdc-card__primary-action mdc-ripple-upgraded" tabIndex="0">
+              <BitcoinPrices/>
+            </div>
+          </div>
+
+
+        </div>
       </div>
 
     );
@@ -27,3 +42,14 @@ class App extends Component {
 }
 
 export default App;
+
+/*
+<div className="demo-card__primary">
+      <h2 className="demo-card__title mdc-typography--headline6">Our Changing Planet</h2>
+      <h3 className="demo-card__subtitle mdc-typography--subtitle2">by Kurt Wagner</h3>
+    </div>
+    <div className="demo-card__secondary mdc-typography--body2">
+      Visit ten places on our planet that are undergoing the biggest changes today.
+    </div>
+  </div>
+  */

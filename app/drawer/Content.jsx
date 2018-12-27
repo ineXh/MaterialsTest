@@ -1,6 +1,7 @@
 import React from 'react';
 import constants from './../constants.js';
 import Prices from './Contents/Prices/index.jsx';
+import Alerts from './Contents/Alerts/index.jsx';
 
 class Content extends React.Component {
 	render () {
@@ -16,6 +17,8 @@ class Content extends React.Component {
     	switch(this.props.list){
     		case constants.ListType.Prices:
     			return <Prices/>
+    		case constants.ListType.Alerts:
+    			return <Alerts/>
     	}
     }
 } // end Content

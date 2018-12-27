@@ -1,5 +1,7 @@
 .PriceContainer{
-  font-size: 18px;
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .row {
@@ -24,5 +26,5 @@ h1 {
 }
 
 .popup {
-  min-height: 50px;
+  min-height: 20px;
 }

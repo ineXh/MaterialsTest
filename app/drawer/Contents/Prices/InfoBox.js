@@ -49,7 +49,17 @@ class InfoBox extends Component {
             <div className="subtext">{'Updated ' + moment(this.state.updatedAt ).fromNow()}</div>
           </div>
         : null}
-        { this.state.currentPrice ?
+        
+
+      </div>
+    );
+  }
+}
+
+export default InfoBox;
+
+/*
+{ this.state.currentPrice ?
           <div id="middle" className='box'>
             <div className="heading">{this.state.monthChangeD}</div>
             <div className="subtext">Change Since Last Month (USD)</div>
@@ -59,10 +69,4 @@ class InfoBox extends Component {
             <div className="heading">{this.state.monthChangeP}</div>
             <div className="subtext">Change Since Last Month (%)</div>
           </div>
-
-      </div>
-    );
-  }
-}
-
-export default InfoBox;
+          */

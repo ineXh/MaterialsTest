@@ -95,12 +95,12 @@ class LineChart extends Component {
           {this.getY().min.toLocaleString('us-EN',{ style: 'currency', currency: 'USD' })}
         </text>
         {/* X AXIS LABELS */}
-        <text transform={`translate(${yLabelSize}, ${svgHeight})`} textAnchor="start">
+        {/*<text transform={`translate(${xLabelSize}, ${svgHeight})`} textAnchor="start">
           { this.props.data[0].d }
         </text>
         <text transform={`translate(${svgWidth}, ${svgHeight})`} textAnchor="end">
           { this.props.data[this.props.data.length - 1].d }
-        </text>
+        </text>*/}
       </g>
     )
   }
@@ -190,11 +190,11 @@ class LineChart extends Component {
 LineChart.defaultProps = {
   data: [],
   color: '#2196F3',
-  pointRadius: 5,
-  svgHeight: 300,
-  svgWidth: 900,
-  xLabelSize: 20,
-  yLabelSize: 80
+  pointRadius: 3,
+  svgHeight: 100,
+  svgWidth: 300,
+  xLabelSize: 15,
+  yLabelSize: 25
 }
 
 export default LineChart;

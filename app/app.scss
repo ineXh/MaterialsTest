@@ -17,6 +17,7 @@ body {
   margin: 0px 0px;
 	height: 100vh;
   overflow: hidden;
+  flex-direction: column;
 }
 
 .foo-button {
@@ -40,13 +41,19 @@ body {
 .mdc-top-app-bar {
   z-index: 7;
 }
+.mdc-drawer-app-content {
+  flex: auto;
+  overflow: auto;
+  position: relative;
+}
 .main-content {
   overflow: auto;
   height: 100%;
 }
 
-.cardsBody {
-    min-width: 50%;
+.cardsContainer {
+    //min-width: 50%;
+    max-width: 90%;
     flex-direction: column;
     background-color: #f2f2f2;
     margin: 5px auto;
@@ -58,6 +65,17 @@ body {
 .demo-card {
     font-size: 1.25rem;
     width: 350px;
-    margin: 48px auto;
-    padding: 6px;
+    margin: 24px 24px;
+    border-radius: 15px;
+}
+.my-card {
+    font-size: 1.25rem;
+    margin: 24px 24px;
+    border-radius: 15px;
+}
+.mdc-card__primary-action{
+  padding: 6px
+}
+.mdc-card__secondary-action{
+  padding: 6px
 }
