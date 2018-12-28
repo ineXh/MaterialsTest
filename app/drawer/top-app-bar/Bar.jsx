@@ -18,7 +18,7 @@ class Bar extends React.Component {
     //{this.props.title}
     return(
       <header className="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar" style={{ top: '0px',
-                                    left  : '0px'}}>
+                                    left  : '0px', zIndex: this.props.zIndex}}>
         <div className="mdc-top-app-bar__row">
           <section className="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
             <a href="#" className="material-icons mdc-top-app-bar__navigation-icon">menu</a>

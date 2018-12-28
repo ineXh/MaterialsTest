@@ -41,20 +41,18 @@ body {
 .mdc-top-app-bar {
   z-index: 10;
 }
-// Drawer with Content
-.mdc-top-app-bar--fixed-adjust{
-  //padding-top: 0px;
-  //z-index: 12;
-}
 // Left Drawer
 .mdc-drawer--dismissible.mdc-drawer--open {
   padding-top: 64px;
   z-index: 0;
 }
+// Content
 .mdc-drawer-app-content {
   flex: auto;
   overflow: auto;
   position: relative;
+  //padding-top: 0px; // 0px padding to overlap with top bar
+  //z-index: 13; //high to put in front of top bar
 }
 .main-content {
   overflow: auto;

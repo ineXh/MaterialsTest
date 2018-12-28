@@ -21,18 +21,6 @@ const poseHeadingConfig = {
 
 const BoxHeading = posed.div(poseHeadingConfig)
 
-const poseZConfig = {
-  top: { "z-index": 0.0,
-             // y: "-100%",
-             transition: { duration: 1000 } },
-  center : { "z-index": 1,
-             // y: "0%",
-            transition: { duration: 1000 } },
-  initialPose: 'bottom'
-}
-
-const BoxZ = posed.div(poseZConfig)
-
 var main = null;
 var header = null;
 
@@ -47,10 +35,10 @@ class App extends Component {
   componentDidMount(){
     header = document.getElementById("SettingsBar")
     main = document.getElementById("main-content")
-    main.addEventListener("scroll", this._calcScroll.bind(this, main))
+    // main.addEventListener("scroll", this._calcScroll.bind(this, main))
   }
   componentWillUnmount() {
-    main.removeEventListener('scroll', this._calcScroll)
+    // main.removeEventListener('scroll', this._calcScroll)
   }
   _calcScroll() {
       var scrollPos = main.scrollTop;

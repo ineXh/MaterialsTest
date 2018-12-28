@@ -6,8 +6,10 @@ import Settings from './Contents/Settings/index.jsx';
 
 class Content extends React.Component {
 	render () {
+        // console.log(this.props.paddingTop)
 		return(
-			<div className="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust">
+			<div className="mdc-drawer-app-content mdc-top-app-bar--fixed-adjust"
+                    style={{ zIndex: this.props.zIndex, paddingTop: this.props.paddingTop}}>
 		        <main className="main-content" id="main-content">
 		        	{this.renderContent()}
 		        </main>
