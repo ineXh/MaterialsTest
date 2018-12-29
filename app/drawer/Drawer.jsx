@@ -34,7 +34,7 @@ class Drawer extends React.Component {
   constructor(props) {    super(props);
     this.state = {
       list: constants.ListType.Settings,
-      headerTitle: "Title23",
+      headerTitle: "Settings",
       headerZIndex: 10,
       contentZIndex: 15,
       contentPaddingTop: "0px"
@@ -51,16 +51,17 @@ class Drawer extends React.Component {
       drawer.open = !drawer.open;
     });
     main = document.getElementById("main-content")
-    // main.addEventListener("scroll", this._calcScroll.bind(this, main))
+    main.addEventListener("scroll", this._calcScroll.bind(this, main))
   }
   componentWillUnmount() {
-    // main.removeEventListener('scroll', this._calcScroll)
+    main.removeEventListener('scroll', this._calcScroll)
   }
   handleClick(input){
     // console.log(input)
     if(input == constants.ListType.Settings){
       this.setState({
           // headerZIndex: 10, // move Header Below
+          headerTitle: "Settings",
           contentZIndex: 15,
           contentPaddingTop: "0px",
           list: input
@@ -95,7 +96,8 @@ class Drawer extends React.Component {
     return(
       <div>
         <Bar
-          title={this.props.headerTitle}
+          list={this.state.list}
+          title={this.state.headerTitle}
           zIndex={this.state.headerZIndex}/>
         <div className="drawer-frame-root">
 

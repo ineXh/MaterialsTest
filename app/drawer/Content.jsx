@@ -3,7 +3,7 @@ import constants from './../constants.js';
 import Prices from './Contents/Prices/index.jsx';
 import Alerts from './Contents/Alerts/index.jsx';
 import Settings from './Contents/Settings/index.jsx';
-
+// import Bar from './top-app-bar/Bar.jsx';
 class Content extends React.Component {
 	render () {
         // console.log(this.props.paddingTop)
